@@ -1,0 +1,46 @@
+*.foreground:   #005f87
+*.background:   #d7d7d7
+*.cursorColor:  #00afaf
+
+! black
+*.color0:  #444444
+*.color8:  #878787
+
+! red
+*.color1:  #af0000
+*.color9:  #d70000
+
+! green 
+*.color2:  #5faf5f
+*.color10: #afd700
+
+! yellow 
+*.color3:  #d75f00
+*.color11: #ffaf00
+
+! blue
+*.color4:  #0087af
+*.color12: #005f87
+
+! magenta
+*.color5:  #d70087
+*.color13: #8700af
+
+! cyan
+*.color6:  #5fafd7
+*.color14: #00af87
+
+! white
+*.color7:  #808080
+*.color15: #5f8787
+
+
+URxvt*font: xft:Inconsolata for Powerline:style=Medium:size=14:antialias=true
+
+URxvt*borderLess: false
+URxvt*externalBorder: 0
+URxvt*internalBorder: 4
+URxvt*scrollBar: false
+URxvt*saveLines: 5000
+
+URxvt*iso14755: false
