@@ -1,5 +1,5 @@
-*.foreground:   #005f87
-*.background:   #d7d7d7
+*.foreground:   #d7d7d7
+*.background:   #005f87 
 *.cursorColor:  #00afaf
 
 ! black
@@ -7,8 +7,8 @@
 *.color8:  #878787
 
 ! red
-*.color1:  #af0000
-*.color9:  #d70000
+*.color1:  #af005f
+*.color9:  #d70087
 
 ! green 
 *.color2:  #5faf5f
@@ -19,20 +19,20 @@
 *.color11: #ffaf00
 
 ! blue
-*.color4:  #0087af
-*.color12: #005f87
+*.color4:  #5fafd7
+*.color12: #5fafff
 
 ! magenta
 *.color5:  #d70087
 *.color13: #8700af
 
 ! cyan
-*.color6:  #00afaf
-*.color14: #00af87
+*.color6:  #afd7d7
+*.color14: #afd7d7
 
 ! white
 *.color7:  #808080
-*.color15: #5f8787
+*.color15: #d0d0d0
 
 
 URxvt*font: xft:Inconsolata for Powerline:style=Medium:size=14:antialias=true

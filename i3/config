@@ -101,9 +101,9 @@ set $dotfiles "dotfiles"
 set $build "build"
 set $opal "opal"
 set $todo "todo"
-set $git "git"
-set $ws9 "9"
-set $ws10 "10"
+set $pico "pico"
+set $rust "rust"
+set $write "write"
 
 # switch to workspace
 bindsym $mod+1 workspace $sys
@@ -113,21 +113,21 @@ bindsym $mod+4 workspace $dotfiles
 bindsym $mod+5 workspace $build
 bindsym $mod+6 workspace $opal
 bindsym $mod+7 workspace $todo
-bindsym $mod+8 workspace $git
-bindsym $mod+9 workspace number $ws9
-bindsym $mod+0 workspace number $ws10
+bindsym $mod+8 workspace $pico
+bindsym $mod+9 workspace $rust
+bindsym $mod+0 workspace $write
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace number $sys
-bindsym $mod+Shift+2 move container to workspace number $web
-bindsym $mod+Shift+3 move container to workspace number $dev
-bindsym $mod+Shift+4 move container to workspace number $dotfiles
-bindsym $mod+Shift+5 move container to workspace number $build
-bindsym $mod+Shift+6 move container to workspace number $opal
-bindsym $mod+Shift+7 move container to workspace number $todo
-bindsym $mod+Shift+8 move container to workspace number $git
-bindsym $mod+Shift+9 move container to workspace number $ws9
-bindsym $mod+Shift+0 move container to workspace number $ws10
+bindsym $mod+Shift+1 move container to workspace $sys
+bindsym $mod+Shift+2 move container to workspace $web
+bindsym $mod+Shift+3 move container to workspace $dev
+bindsym $mod+Shift+4 move container to workspace $dotfiles
+bindsym $mod+Shift+5 move container to workspace $build
+bindsym $mod+Shift+6 move container to workspace $opal
+bindsym $mod+Shift+7 move container to workspace $todo
+bindsym $mod+Shift+8 move container to workspace $pico
+bindsym $mod+Shift+9 move container to workspace $rust
+bindsym $mod+Shift+0 move container to workspace $write
 
 # go back to last workspace with same keystroke
 workspace_auto_back_and_forth yes
@@ -176,8 +176,8 @@ for_window [class="Arandr"] floating enable
 
 # colors
 # special
-set_from_resource $foreground foreground #005f87
-set_from_resource $background background #d7d7d7
+set_from_resource $foreground foreground #d7d7d7
+set_from_resource $background background #005f87
 set_from_resource $cursorColor cursorColor #00afaf
 
 # black
@@ -186,8 +186,8 @@ set_from_resource $black2 color8 #878787
 set $trueblack #000000
 
 # red
-set_from_resource $red1 color1 #af0000
-set_from_resource $red2 color9 #d70000
+set_from_resource $red1 color1 #af005f
+set_from_resource $red2 color9 #d70087
 
 # green
 set_from_resource $green1 color2 #5faf5f
@@ -198,16 +198,16 @@ set_from_resource $yellow1 color3 #d75f00
 set_from_resource $yellow2 color11 #ffaf00
 
 # blue
-set_from_resource $blue1 color4 #0087af
-set_from_resource $blue2 color12 #005f87
+set_from_resource $blue1 color4 #5fafd7
+set_from_resource $blue2 color12 #5fafff
 
 # magenta
 set_from_resource $magenta1 color5 #d70087
 set_from_resource $magenta2 color13 #8700af
 
 # cyan
-set_from_resource $cyan1 color6 #00afaf
-set_from_resource $cyan2 color14 #00af87
+set_from_resource $cyan1 color6 #afd7d7
+set_from_resource $cyan2 color14 #afd7d7
 
 # white
 set_from_resource $white1 color7 #808080
@@ -236,9 +236,9 @@ bar {
         colors {
             background #1c1c1c
             #                       border  backgr  text
-            focused_workspace       #eeeeee #eeeeee $foreground
-            active_workspace        #eeeeee $cyan2  $foreground
-            inactive_workspace      $black2 #005f87 #d0d0d0
+            focused_workspace       #eeeeee #005f87 $foreground
+            active_workspace        #eeeeee $c1c1c1 $foreground
+            inactive_workspace      $black2 #d7d7d7 #444444
             urgent_workspace        $black2 $red1   $foreground
             binding_mode            $magenta2   $magenta2   $foreground
         }
